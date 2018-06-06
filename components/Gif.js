@@ -1,4 +1,4 @@
-let GIPHY_LOADING_URL = 'http://www.ifmo.ru/images/loader.gif';
+const GIPHY_LOADING_URL = 'http://www.ifmo.ru/images/loader.gif';
 const styles = {
     minHeight: '310px',
     margin: '0.5em'
@@ -9,7 +9,7 @@ Gif = React.createClass ({
         return this.props.sourceUrl || GIPHY_LOADING_URL;
     },
     render: function () {
-        let url = this.props.loading ? GIPHY_LOADING_URL : this.props.url;
+        const url = this.props.loading ? GIPHY_LOADING_URL : this.props.url;
         
         return (
             <div style={styles}>
