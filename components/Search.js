@@ -38,5 +38,4 @@ Search = React.createClass ({
             value={this.state.searchTerm}
         />
     }
-
 });
